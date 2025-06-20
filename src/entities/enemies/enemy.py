@@ -41,7 +41,7 @@ class Enemy(Entity):
             self._navigate_to_platform(player_platform)
         else:
             self._face_player(player_center)
-            #self._shoot()
+            self._shoot()
             self._dodge_bullets(player_bullets)
             self._move_to_map_center()
 
