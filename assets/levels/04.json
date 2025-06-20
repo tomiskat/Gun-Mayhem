@@ -1,7 +1,7 @@
 {
     "id": 3,
     "name": "Double Trouble",
-    "unlocked": true,
+    "unlocked": false,
     "map": "map_01.tmx",
     "player": {
         "name": "Player",
