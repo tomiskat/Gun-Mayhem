@@ -5,14 +5,14 @@
     "map": "map_01.tmx",
     "player": {
         "name": "Player",
-        "lives": 1,
+        "lives": 5,
         "weapon": "normal"
     },
     "enemies": [
         {
             "name": "Warrior",
             "type": "default",
-            "lives": 1,
+            "lives": 5,
             "weapon": "normal"
         }
     ]
