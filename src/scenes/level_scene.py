@@ -127,7 +127,7 @@ class LevelScene(Scene):
         """
         hit_bullets = pygame.sprite.spritecollide(self.player, self.enemy_bullets, dokill=True)
         for bullet in hit_bullets:
-            self.player.knockback_x = bullet.damage
+            self.player.knockback_x += bullet.damage
 
     def _handle_friendly_bullets(self):
         """
@@ -136,7 +136,7 @@ class LevelScene(Scene):
         hits = pygame.sprite.groupcollide(self.enemy_group, self.player_bullets, False, True)
         for enemy, bullets in hits.items():
             for bullet in bullets:
-                enemy.knockback_x = bullet.damage
+                enemy.knockback_x += bullet.damage
 
     def _check_level_end(self):
         """
