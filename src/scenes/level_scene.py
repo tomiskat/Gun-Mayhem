@@ -42,6 +42,7 @@ class LevelScene(Scene):
         Initialize the level scene each time when the level is started from the menu.
         In case that level was paused, there is no need to reinitialize the level.
         """
+        pygame.mouse.set_visible(False)
         if self.game_manager.previous_scene == GameScenes.PAUSE:
             return
 

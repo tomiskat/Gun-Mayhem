@@ -89,6 +89,7 @@ class MenuScene(Scene):
         """
         Initialize the menu scene each time when game is switched to this scene.
         """
+        pygame.mouse.set_visible(True)
         super().initialize()
         self._render_title()
         self._render_level_buttons()

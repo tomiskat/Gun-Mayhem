@@ -121,6 +121,7 @@ class PauseScene(Scene):
         the parent draw() method. In case that level scene is paused, let level scene to be the
         background (Inspired by the original game.)
         """
+        pygame.mouse.set_visible(True)
         if self.game_manager.previous_scene == GameScenes.MENU:
             super().initialize()
 
