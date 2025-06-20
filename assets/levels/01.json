@@ -1,0 +1,19 @@
+{
+    "id": 0,
+    "name": "Beginning of Journey",
+    "unlocked": true,
+    "map": "map_01.tmx",
+    "player": {
+        "name": "Player",
+        "lives": 1,
+        "weapon": "normal"
+    },
+    "enemies": [
+        {
+            "name": "Warrior",
+            "type": "default",
+            "lives": 1,
+            "weapon": "normal"
+        }
+    ]
+}

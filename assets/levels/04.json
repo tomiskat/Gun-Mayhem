@@ -1,0 +1,25 @@
+{
+    "id": 3,
+    "name": "Double Trouble",
+    "unlocked": true,
+    "map": "map_01.tmx",
+    "player": {
+        "name": "Player",
+        "lives": 5,
+        "weapon": "normal"
+    },
+    "enemies": [
+        {
+            "name": "Warrior1",
+            "type": "default",
+            "lives": 5,
+            "weapon": "normal"
+        },
+        {
+            "name": "Warrior2",
+            "type": "default",
+            "lives": 5,
+            "weapon": "normal"
+        }
+    ]
+}

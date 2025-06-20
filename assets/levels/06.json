@@ -1,0 +1,25 @@
+{
+    "id": 5,
+    "name": "Ultimate Challenge",
+    "unlocked": true,
+    "map": "map_01.tmx",
+    "player": {
+        "name": "Player",
+        "lives": 5,
+        "weapon": "normal"
+    },
+    "enemies": [
+        {
+            "name": "Shrinker",
+            "type": "shrinker",
+            "lives": 5,
+            "weapon": "normal"
+        },
+        {
+            "name": "Triple",
+            "type": "default",
+            "lives": 5,
+            "weapon": "triple"
+        }
+    ]
+}

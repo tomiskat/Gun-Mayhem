@@ -1,0 +1,3 @@
+BACKGROUND_LAYER = "Background"
+ENVIRONMENT_LAYER = "Environment"
+PLATFORM_LAYER = "Platform"

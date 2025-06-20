@@ -1,0 +1,19 @@
+{
+    "id": 2,
+    "name": "Mr. Invisible",
+    "unlocked": true,
+    "map": "map_01.tmx",
+    "player": {
+        "name": "Player",
+        "lives": 5,
+        "weapon": "normal"
+    },
+    "enemies": [
+        {
+            "name": "Invisible",
+            "type": "invisible",
+            "lives": 5,
+            "weapon": "normal"
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+<!--
+  This HTML file displays a styled control guide for a game, showing which keys are
+  used for movement, shooting, and pausing. We exported it to a controls.png file.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Controls</title>
+<style>
+  body {
+    background: #23272f;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .controls-wrapper {
+    background: #2e3340;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 32px #0006;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+  }
+
+  .move-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .key-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .key-row {
+    display: flex;
+    gap: 5px;
+  }
+
+  .key, .spacebar, .small-key, .esc {
+    background: #44485a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .key {
+    width: 56px;
+    height: 56px;
+    font-size: 1.8rem;
+  }
+
+  .spacebar {
+    width: 170px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .small-key {
+    width: 45px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .esc {
+    width: 65px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .move-label, .key-label, .shoot-label, .pause-label {
+    font-weight: bold;
+    margin-top: 2px;
+    text-align: center;
+  }
+
+  .move-label {
+    color: #ffeb3b;
+  }
+
+  .shoot-label {
+    color: #ff5252;
+  }
+
+  .pause-label {
+    color: #5ad1ff;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="controls-wrapper">
+  <h1>CONTROLS</h1>
+
+  <div class="move-container">
+    <!-- Arrow keys -->
+    <div class="key-group">
+      <div class="key-row">
+        <div class="key" style="visibility:hidden;"></div>
+        <div class="key">&#8593;</div>
+        <div class="key" style="visibility:hidden;"></div>
+      </div>
+      <div class="key-row">
+        <div class="key">&#8592;</div>
+        <div class="key">&#8595;</div>
+        <div class="key">&#8594;</div>
+      </div>
+      <div class="move-label">MOVE</div>
+    </div>
+
+    <!-- WASD keys -->
+    <div class="key-group">
+      <div class="key-row">
+        <div class="key" style="visibility:hidden;"></div>
+        <div class="key">W</div>
+        <div class="key" style="visibility:hidden;"></div>
+      </div>
+      <div class="key-row">
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+      </div>
+      <div class="move-label">MOVE</div>
+    </div>
+  </div>
+
+  <div class="move-container">
+    <div class="key-group">
+      <div class="spacebar">SPACEBAR</div>
+      <div class="key-label shoot-label">SHOOT</div>
+    </div>
+    <div class="key-group">
+      <div class="small-key">P</div>
+      <div class="key-label shoot-label">SHOOT</div>
+    </div>
+    <div class="key-group">
+      <div class="esc">ESC</div>
+      <div class="key-label pause-label">PAUSE</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
