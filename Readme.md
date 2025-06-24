@@ -3,6 +3,7 @@
 A 2D action platformer developed in Python using Pygame, inspired by the popular browser game Gun Mayhem. Created
 as a school project for Programming in Python course.
 
+---
 
 ## 🚀 Installation
 
@@ -33,11 +34,13 @@ as a school project for Programming in Python course.
    ```bash
    python main.py
    ```
+---
 
 ## 🎮 How to Play
   - **WASD/Arrow Keys**: Move player
   - **Space/P**: Shoot
   - **ESC**: Pause game
+---
 
 ## 🏗️ Project Structure
 
@@ -58,36 +61,46 @@ Gun-Mayhem/
 └── requirements.txt   # Python dependencies
 ```
 
-## 🧩 Game Design
+## 🧩 Game Overview
 
-- **Game Scenes**:
-  - `MenuScene`: Main menu with game options
-  - `LevelScene`: Main gameplay area
-  - `PauseScene`: Pause menu during gameplay
+The game loop is implemented in `main.py` and drives the overall execution of the game. The game is organized into three main scenes where each
+scene is responsible for its own drawing, updating, and event handling:
 
-- **Entities**:
-  - Player character with customizable controls
-  - Various enemy typesy
+- **`MenuScene`** – Displays the main menu with levels.  
+- **`LevelScene`** – Core gameplay scene that loads level data, creates entities, and handles level progression and completion.  
+- **`PauseScene`** – Activated during gameplay to display the pause menu and allow the player to resume or quit.
 
-- **Weapons**:
-  - Base Weapon class for all weapons
-  - Bullet physics and collision
+All game characters inherit from a common base class, `Entity`, which defines shared behavior such as movement, collision, and interaction. 
+Entities have assigned weapons, allowing them to shoot using customizable logic. The game includes various enemy types, such as the standard base enemy, 
+**Shrinker** (a smaller, agile enemy), **Invisible** (hard to detect), and **Triple** (equipped with a weapon that fires three bullets simultaneously).
+
+---
+
+## 🧱 Design Principles
+
+The codebase is designed with **high cohesion** and **loose coupling** in mind. Each module has a clear responsibility, which makes the project easier to understand, maintain, and extend. This modular approach ensures that new features or changes can be introduced with minimal impact on the existing code.
+
+---
 
 
 ## 🧪 Testing
 
-The game was manually tested by playing through multiple levels and menus on various screen resolutions
+The game was manually tested by playing through all levels on various screen resolutions
 and setups to ensure smooth gameplay and UI scaling. 
 
 ### Tested On:
 - WQXGA (2560x1600)
 - Full HD (1920x1080)
 
+---
+
+
 ## 📸 Screenshots
 
-### Main Menu
+### Menu scene
 ![Main Menu](assets/screenshots/menu.png)
-### In-Game
+
+### Level scene
 ![Gameplay](assets/screenshots/level.png)
 
 
