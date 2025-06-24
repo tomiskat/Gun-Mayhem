@@ -9,7 +9,7 @@ as a school project for Programming in Python course.
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tomiskat/Gun-Mayhem
    cd Gun-Mayhem
    ```
 
