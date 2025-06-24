@@ -70,7 +70,7 @@ The game loop is implemented in `main.py` and drives the overall execution of th
 scene is responsible for its own drawing, updating, and event handling:
 
 - **`MenuScene`** – Displays the main menu with levels.  
-- **`LevelScene`** – Core gameplay scene that loads level data, creates entities, and handles level progression and completion.  
+- **`LevelScene`** – Core gameplay scene that loads level data, creates entities, and handles level progression.  
 - **`PauseScene`** – Activated during gameplay to display the pause menu and allow the player to resume or quit.
 
 All game characters inherit from a common base class, `Entity`, which defines shared behavior such as movement, collision, and interaction. 
