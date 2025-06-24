@@ -36,6 +36,12 @@ as a school project for Programming in Python course.
    ```
 ---
 
+## 🎮 How to Play
+  - **WASD/Arrow Keys**: Move player
+  - **Space/P**: Shoot
+  - **ESC**: Pause game
+---
+
 ## 🧩 Game Overview
 
 The game loop is implemented in `main.py` and drives the overall execution of the game. The game is organized into three main scenes where each
