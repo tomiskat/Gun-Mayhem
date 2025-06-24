@@ -36,34 +36,6 @@ as a school project for Programming in Python course.
    ```
 ---
 
-## 🎮 How to Play
-  - **WASD/Arrow Keys**: Move player
-  - **Space/P**: Shoot
-  - **ESC**: Pause game
----
-
-## 🏗️ Project Structure
-
-```
-Gun-Mayhem/
-├── assets/            # Game assets (images, sounds, maps)
-├── src/               
-│   ├── constants/     # Game constants (colors, fonts)
-│   ├── entities/      # Game entities (player, enemies)
-│   ├── enums/         # Enumerations
-│   ├── managers/      # Game and level managers
-│   ├── model/         # Data models
-│   ├── scenes/        # Game scenes (menu, level, pause)
-│   ├── ui/            # User interface components
-│   ├── utils/         # Utility functions
-│   └── weapons/       # Weapon implementations
-├── main.py            # Main game entry point
-└── requirements.txt   # Python dependencies
-```
-
----
-
-
 ## 🧩 Game Overview
 
 The game loop is implemented in `main.py` and drives the overall execution of the game. The game is organized into three main scenes where each
