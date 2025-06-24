@@ -61,6 +61,9 @@ Gun-Mayhem/
 └── requirements.txt   # Python dependencies
 ```
 
+---
+
+
 ## 🧩 Game Overview
 
 The game loop is implemented in `main.py` and drives the overall execution of the game. The game is organized into three main scenes where each
